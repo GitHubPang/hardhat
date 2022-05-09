@@ -7,6 +7,7 @@ import { supportProperAddress } from "./properAddress";
 import { supportProperPrivateKey } from "./properPrivateKey";
 import { supportChangeEtherBalance } from "./changeEtherBalance";
 import { supportChangeEtherBalances } from "./changeEtherBalances";
+import { supportChangeTokenBalance } from "./changeTokenBalance";
 
 export function hardhatChaiMatchers(
   chai: Chai.ChaiStatic,
@@ -20,4 +21,5 @@ export function hardhatChaiMatchers(
   supportProperPrivateKey(chai.Assertion);
   supportChangeEtherBalance(chai.Assertion);
   supportChangeEtherBalances(chai.Assertion);
+  supportChangeTokenBalance(chai.Assertion);
 }
